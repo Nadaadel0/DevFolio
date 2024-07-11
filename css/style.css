@@ -1,0 +1,746 @@
+:root {
+    --fontfamily: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--fontfamily);
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav .container .navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+nav .container .navbar-nav .nav-link {
+    font-size: 1rem;
+
+    padding: 1rem;
+    position: relative;
+}
+
+
+
+
+nav .container .navbar-nav .nav-link::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+nav .container .navbar-nav .nav-link:hover::after {
+    width: 50%;
+}
+
+nav .container .navbar-nav .nav-link.active::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    background-color: white;
+}
+
+header .container .content h1 {
+    font-size: 48px;
+}
+
+header .fixed-circle i {
+    width: 40px;
+    height: 40px;
+    background-color: #0078FF;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: background-color .5s;
+}
+
+header .fixed-circle i:hover {
+    background-color: rgba(0, 119, 255, 0.768);
+
+}
+
+/* animation */
+header .content span {
+    position: relative;
+
+}
+
+header .content span::after {
+    content: "";
+    color: white;
+    font-size: 2.5rem;
+    font-size: 600;
+    /* position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: white;
+    width: 3px;
+    height: 30px; */
+    animation: typing 15s infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "D|";
+    }
+    1% {
+        content: "De|";
+    }
+    2% {
+        content: "Des|";
+    }
+
+    3% {
+        content: "Desi|";
+
+    }
+
+    5% {
+        content: "Desig|";
+    }
+
+    7% {
+        content: "Design|";
+
+    }
+
+    9% {
+        content: "Designe|";
+
+    }
+
+    10% {
+        content: "Designer|";
+    }
+
+    12% {
+        content: "Designer|";
+    }
+
+    13% {
+        content: "Designe|";
+
+    }
+    13% {
+        content: "Design|";
+
+    }
+
+    15% {
+        content: "Desig|";
+    }
+    16% {
+        content: "Desi|";
+    }
+    17% {
+        content: "Des|";
+    }
+    19% {
+        content: "De|";
+    }
+
+    20% {
+        content: "Dev|";
+
+    }
+
+    22% {
+        content: "Deve|";
+
+    }
+
+    23% {
+        content: "Devel|";
+
+    }
+    24% {
+        content: "Develo|";
+
+    }
+    26% {
+        content: "Develop|";
+
+    }
+
+    28% {
+        content: "Developer|";
+
+    }
+
+    32% {
+        content: "Developer|";
+
+    }
+
+    35% {
+        content: "Develop|";
+
+    }
+    37% {
+        content: "Devel|";
+
+    }
+    39% {
+        content: "Deve|";
+
+    }
+
+    41% {
+        content: "Dev|";
+
+    }
+    43% {
+        content: "De|";
+
+    }
+    45% {
+        content: "D|";
+
+    }
+
+    47% {
+        content: "|";
+
+    }
+
+    48% {
+        content: "F|";
+
+    }
+    49% {
+        content: "Fr|";
+
+    }
+    50% {
+        content: "Fre|";
+
+    }
+    51% {
+        content: "Free|";
+
+    }
+    51% {
+        content: "Freel|";
+
+    }
+
+    55% {
+        content: "Freela|";
+
+    }
+    57% {
+        content: "Freelan|";
+
+    }
+
+    59% {
+        content: "Freelanc|";
+
+    }
+    59% {
+        content: "Freelance|";
+
+    }
+
+    62% {
+        content: "Freelancer|";
+
+    }
+
+    65% {
+        content: "Freelancer|";
+
+    }
+    66% {
+        content: "Freelance|";
+
+    }
+    67% {
+        content: "Freelanc|";
+
+    }
+
+
+    68% {
+        content: "Freelan|";
+
+    }
+    69% {
+        content: "Freela|";
+
+    }
+    70% {
+        content: "Freel|";
+
+    }
+
+    71% {
+        content: "Free|";
+
+    }
+    72% {
+        content: "Fr|";
+
+    }
+    73% {
+        content: "F|";
+
+    }
+
+
+    74% {
+        content: "|";
+
+    }
+
+    75% {
+        content: "P|";
+
+    }
+    76% {
+        content: "Ph|";
+
+    }
+    77% {
+        content: "Pho|";
+
+    }
+    78% {
+        content: "Phot|";
+
+    }
+    79% {
+        content: "Photo|";
+
+    }
+    80% {
+        content: "Photog|";
+
+    }
+    81% {
+        content: "Photogr|";
+
+    }
+   
+
+    82% {
+        content: "Photogra|";
+
+    }
+    83% {
+        content: "Photograp|";
+
+    }
+    84% {
+        content: "Photograph|";
+
+    }
+
+    85% {
+        content: "Photographer|";
+
+    }
+  
+    90% {
+        content: "Photographer|";
+
+    }
+   
+    91% {
+        content: "Photograph|";
+
+    }
+
+    92% {
+        content: "Photograp|";
+
+    }
+
+    93% {
+        content: "Photogra|";
+
+    }
+    94% {
+        content: "Photogr|";
+
+    }
+    95% {
+        content: "Photog|";
+
+    }
+    96% {
+        content: "Photo|";
+
+    }
+    97% {
+        content: "Pho|";
+
+    }
+    98% {
+        content: "Ph|";
+
+    }
+    99% {
+        content: "|";
+
+    }
+
+
+    100% {
+        content: "|";
+
+    }
+
+
+
+}
+
+
+
+/* dropdown */
+.dropdown:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+    display: block;
+    color: #0078FF;
+}
+
+.dropend:hover>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: .125rem;
+}
+
+.dropdown-item:hover,
+.dropdown .nav-link:hover {
+    color: #0078ff;
+}
+
+/* end of dropdown */
+
+/* ---------------------------------------------------------------------- */
+section .container .row h2 {
+    position: relative;
+}
+
+section .container .row h2::after {
+
+    content: "";
+    width: 15%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #0078FF;
+}
+
+#about .item .col-7 p {
+    line-height: 1.3;
+    word-spacing: 1px;
+    font-size: 18px;
+
+}
+
+/* #about .item .col-7 p span{
+    font-weight: 700;
+} */
+.progress {
+    height: 12px;
+}
+
+/* -------------------------------------------------------------------- */
+
+#services .container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#services .container .p-ser {
+    position: relative;
+}
+
+#services .container .p-ser::after {
+    content: "";
+    width: 4%;
+    height: 5px;
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    background-color: #0078FF;
+    transform: translatex (-48%);
+}
+
+
+#services .item-services i {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    border: solid #0078FF 10px;
+    transition: all 0.5s;
+}
+
+
+#services .item-services i:hover {
+    border: solid #CDE1F8 10px;
+    background-color: #0078FF;
+    color: white;
+}
+
+#services .container .p-ser-content {
+    color: #4E4E4E;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.precentage {
+    background-image: linear-gradient(rgba(5, 89, 184, 0.845), rgba(5, 89, 184, 0.845)), url(../images/post-3.jpg);
+    background-color: #0078FF;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* height: 60vh; */
+}
+
+
+.precentage i {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    font-size: 35px;
+    border: solid #CDE1F8 10px;
+    transition: all 0.5s;
+}
+
+/* ---------------------------------------------------------------------------- */
+#portfolio .container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#portfolio .container .p-ser {
+    position: relative;
+}
+
+#portfolio .container .p-ser::after {
+    content: "";
+    width: 4%;
+    height: 5px;
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    background-color: #0078FF;
+    transform: translatex (-48%);
+}
+
+#portfolio .container .row .portfolio-item .content-flex p {
+    font-size: 13px;
+
+}
+
+#portfolio .container .row .portfolio-item i {
+    color: white;
+    background-color: #0078FF;
+    border-radius: 50%;
+    border: #0078FF solid 3px;
+
+}
+
+#portfolio .container .row .portfolio-item img {
+    transition: transform 1s;
+
+}
+
+#portfolio .container .row .portfolio-item:hover img {
+    transform: scale(1.2);
+}
+
+
+.modal .modal-header .btn-close1 {
+
+    --bs-btn-close-color: #fff;
+
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+    border: 0;
+    border-radius: .375rem;
+    opacity: var(--bs-btn-close-opacity);
+}
+
+.modal.fade {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .modal-dialog {
+    max-height: 80vh;
+    max-width: 60%;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+.slider {
+    background-image: linear-gradient(rgb(0, 120, 255, 0.7), rgb(0, 120, 255, 0.7)), url(../images/overlay-bg.jpg);
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider .slider-content {
+    padding: 8rem 0;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+#blog .container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#blog .container .p-ser {
+    position: relative;
+}
+
+#blog .container .p-ser::after {
+    content: "";
+    width: 4%;
+    height: 5px;
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    background-color: #0078FF;
+    transform: translatex (-48%);
+}
+
+#blog .container .row .item-blog .blog-body a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+#blog .container .row .item-blog .blog-body p {
+    font-size: 1rem;
+}
+
+#blog .container .row .item-blog .blog-footer .image-link a {
+    text-decoration: none;
+}
+
+#blog .container .row .item-blog .blog-footer .image-link a span {
+    color: #4E4E4E;
+    transition: all 0.5s;
+
+}
+
+#blog .container .row .item-blog .blog-body a:hover,
+#blog .container .row .item-blog .blog-footer .image-link:hover a span {
+    color: #0078FF;
+}
+
+#blog .container .row .item-blog .blog-position {
+    font-size: 11px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+.contact {
+    background-image: linear-gradient(rgb(0, 120, 255, 0.7), rgb(0, 120, 255, 0.7)), url(../images/overlay-bg.jpg);
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contact .container .row h2 {
+    position: relative;
+}
+
+.contact .container .row h2::after {
+
+    content: "";
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #0078FF;
+}
+
+.contact form button {
+    color: white;
+    font-size: 19px;
+    outline: solid transparent 5px;
+
+    transition: all 0.5s;
+}
+
+.contact form button:hover {
+    color: white;
+    outline: solid #CDE1F8 5px;
+    background-color: #0078FF;
+
+    opacity: 0.8;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 200;
+    color: #595C5F;
+}
+
+.contact .contact-footer i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    border: solid #0078FF 4px;
+    transition: all 0.5s;
+}
+
+
+.contact .contact-footer i:hover {
+    border: solid #CDE1F8 4px;
+    background-color: #0078FF;
+    color: white;
+}
+
+/* ----------------------------------------------------------------------- */
+footer {
+    background-color: #0062D3;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+footer p span {
+    font-size: 1rem;
+    font-weight: 700;
+}

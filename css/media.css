@@ -1,0 +1,40 @@
+
+@media (min-width: 576px) { 
+
+
+
+
+ }
+
+
+@media (min-width: 768px) {
+
+
+
+ }
+
+
+
+
+@media (min-width: 992px) { 
+
+    header .container .content h1{
+        font-size: 72px;
+    }
+
+ }
+
+ @media (min-width: 1200px) { 
+    
+
+
+
+
+
+ }
+ @media (min-width: 1400px) { 
+
+
+
+    
+ }
